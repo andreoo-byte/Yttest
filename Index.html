@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Video Site</title>
+  <title>Video Player</title>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    iframe {
+      border: none;
+      width: 80vw;
+      height: 45vw;
+      max-width: 960px;
+      max-height: 540px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    }
+  </style>
 </head>
 <body>
-  <h1>My Uploaded Video</h1>
-  <video width="640" height="360" controls>
-    <source src="https://youtu.be/m-YZwdQ0UPM?si=m54VxAbbWQsk_Mdq" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <iframe 
+    src="https://www.youtube.com/embed/m-YZwdQ0UPM?rel=0&autoplay=0&modestbranding=1" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
 </body>
 </html>
