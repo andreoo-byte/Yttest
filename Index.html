@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Video Player</title>
+  <meta charset="UTF-8">
+  <title>My Streamtape Video</title>
   <style>
     body {
       background-color: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
     }
     iframe {
       border: none;
-      width: 80vw;
-      height: 45vw;
-      max-width: 960px;
-      max-height: 540px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+  <h1>My Streamtape Video</h1>
   <iframe 
-    src="https://www.youtube.com/embed/m-YZwdQ0UPM?rel=0&autoplay=0&modestbranding=1" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
+    src="https://streamtape.com/e/wlBBBkDmr1uJOlJ/Record_2025-06-07-13-44-16.mp4" 
+    width="800" 
+    height="600" 
+    allowfullscreen 
+    allowtransparency 
+    allow="autoplay" 
+    scrolling="no">
   </iframe>
 </body>
 </html>
